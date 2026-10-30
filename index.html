@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>短剧 AI 分镜工作台</title>
+    <!-- 首屏内联：避免深色模式闪烁（比任何 React 副作用都早执行） -->
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('dj:theme');
+          var theme = stored === 'light' || stored === 'dark' ? stored : 'dark';
+          document.documentElement.setAttribute('data-theme', theme);
+        } catch (e) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="/assets/index-9Qhhn6PE.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-COneOABr.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
