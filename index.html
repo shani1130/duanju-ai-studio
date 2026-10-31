@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>短剧 AI 分镜工作台</title>
+    <!-- 首屏内联：避免深色模式闪烁（比任何 React 副作用都早执行） -->
     <script>
       (function () {
         try {
@@ -13,12 +14,9 @@
         } catch (e) {
           document.documentElement.setAttribute('data-theme', 'dark');
         }
-        if (!window.location.hash) {
-          window.location.hash = '#/login';
-        }
       })();
     </script>
-    <script type="module" crossorigin src="./assets/index-Ceaq1y3P.js"></script>
+    <script type="module" crossorigin src="./assets/index-BoSi1c7U.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-COneOABr.css">
   </head>
   <body>
